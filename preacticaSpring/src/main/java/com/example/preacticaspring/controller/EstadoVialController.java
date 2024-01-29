@@ -24,7 +24,7 @@ public class EstadoVialController {
     }
 
     @DeleteMapping("/editar/{id_estadoVial}")
-    public void eliminar(@RequestParam Long id_estadoVial){
+    public void eliminar(@PathVariable Long id_estadoVial){
         service.eliminar(id_estadoVial);
     }
 }
