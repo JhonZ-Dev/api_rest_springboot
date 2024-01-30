@@ -18,10 +18,7 @@ public class EstadoVialController {
         return service.guardar(estadoVial);
     }
 
-    @GetMapping("/obtener")
-    public List<EstadoVial> listar(){
-        return service.listar();
-    }
+    
 
     @DeleteMapping("/editar/{id_estadoVial}")
     public void eliminar(@PathVariable Long id_estadoVial){
