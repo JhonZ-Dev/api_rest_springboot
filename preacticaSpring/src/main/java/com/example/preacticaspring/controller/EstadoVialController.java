@@ -13,7 +13,11 @@ public class EstadoVialController {
     @Autowired
     public EstadoVialService service;
 
-    
+    @PostMapping("/enviar")
+    public EstadoVial guardar(@RequestBody EstadoVial estadoVial){
+        return service.guardar(estadoVial);
+    }
+
     @GetMapping("/obtener")
     public List<EstadoVial> listar(){
         return service.listar();
