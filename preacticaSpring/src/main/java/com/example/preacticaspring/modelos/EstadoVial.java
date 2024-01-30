@@ -11,11 +11,6 @@ import java.time.LocalDate;
 @Data
 @ToString
 public class EstadoVial {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_estadoVial;
-    private Boolean estado;
-    private String temporada;
-    private LocalDate fecha;
+   
 
 }
