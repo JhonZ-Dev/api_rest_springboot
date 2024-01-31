@@ -18,10 +18,6 @@ public class EstadoVialService {
         return repo.save(estadoVial);
     }
 
-    //listar
-    public List<EstadoVial> listar(){
-        return repo.findAll();
-    }
 
     //encontrarPorID
     //OPTIONAL, CLASE
