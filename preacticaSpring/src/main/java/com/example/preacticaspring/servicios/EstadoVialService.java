@@ -10,13 +10,7 @@ import java.util.Optional;
 
 @Service
 public class EstadoVialService {
-    @Autowired
-    private EstadoVialRepo repo;
-
-    //metodo CRUD
-    public EstadoVial guardar(EstadoVial estadoVial){
-        return repo.save(estadoVial);
-    }
+  
 
     //listar
     public List<EstadoVial> listar(){
